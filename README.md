@@ -63,20 +63,22 @@ App will be available at:
 src/
 │
 ├── components/
-│   ├── SearchBar.tsx
+│   ├── AnimeCard.tsx
 │   ├── SearchPage.tsx
-│   └── Pagination.tsx
+│   └── DetailPage.tsx
 │
-├── store/
-│   ├── index.ts
+├── features/
 │   └── animeSlice.ts
 │
-├── types/
-│   └── index.ts
+├── hoooks/
+│   ├── reduxHooks.tsx
+│   └── useDebouncedValue.ts
 │
 ├── App.tsx
 ├── main.tsx
+├── store.ts
 ├── theme.ts
+├── types.ts
 └── styles.css
 ```
 
@@ -105,7 +107,7 @@ All AI-assisted work is documented in [`PROMPTS.md`](./PROMPTS.md).
 ## 🧩 Example Usage
 
 1. Type an anime title (e.g., *Naruto*, *Attack on Titan*)  
-2. Click **Search**  
+2. And showing results:
 3. Browse paginated results  
 4. Click **Next / Previous** to navigate between pages  
 
