@@ -12,7 +12,7 @@ import {
 import { Link } from 'react-router-dom'
 
 export default function AnimeCard({ anime }: { anime: Anime }) {
-  const img = anime.images?.jpg?.large_image_url ?? anime.images?.jpg?.image_url ?? '/placeholder.jpg'
+  const img = anime.images?.jpg?.image_url ?? '/placeholder.jpg'
 
   const bgCard = useColorModeValue('white', 'gray.800')
   const textColor = useColorModeValue('gray.700', 'gray.200')

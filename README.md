@@ -112,7 +112,32 @@ All AI-assisted work is documented in [`PROMPTS.md`](./PROMPTS.md).
 4. Click **Next / Previous** to navigate between pages  
 
 ---
+## Bonus Implementation
+The AnimeCard component was redesigned to create a more engaging and visually appealing user experience with modern UI effects and richer content details.
 
+💡 Visual Improvements
+
+Eye-catching Hover Effect:
+Each anime card slightly lifts and gains a soft shadow when hovered, creating a smooth depth illusion and interactivity.
+
+Rounded Corners and Shadow:
+Cards use a borderRadius with boxShadow to make the layout feel clean, modern, and elevated.
+
+Responsive Image Display:
+The anime cover image automatically fits and scales with the card width, maintaining aspect ratio.
+
+🧩 Additional Anime Information
+
+To provide users with more context at a glance, the following details were added below each anime title:
+
+Information	Data Source	Example / Description
+🗓 Airing Year / Season	anime.aired?.prop?.from?.year or anime.season	Displays the year or season when the anime first aired.
+🏷 Genre	anime.genres?.[0]?.name	Shows the main genre (e.g., Action, Romance, Comedy).
+🕒 Episode Duration	anime.duration	Indicates average duration per episode (e.g., 24 min per ep).
+🧑‍🎤 Studio	anime.studios?.[0]?.name	Displays the animation studio (e.g., MAPPA, Ufotable).
+🔥 Popularity / Members	anime.popularity or anime.members	Represents the anime’s overall popularity or member count.
+
+---
 ## 👨‍💻 Author
 
 **Annuh Liwan Nahar**  

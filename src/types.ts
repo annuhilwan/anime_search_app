@@ -1,4 +1,12 @@
 export type Anime = {
+title_japanese: any
+genres: any
+aired: any
+duration: string
+rating: string
+type: string
+studios: any
+trailer: any
 mal_id: number
 url: string
 images: { jpg?: { image_url?: string } }

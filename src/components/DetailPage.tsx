@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
-import { Anime } from '../types'
+import { Anime, Genre } from '../types'
 import {
   Box,
   Heading,
@@ -112,7 +112,7 @@ export default function DetailPage() {
           )}
 
           <Stack direction="row" mt={3} spacing={2} flexWrap="wrap">
-            {anime.genres?.slice(0, 4).map((genre) => (
+            {anime.genres?.slice(0, 4).map((genre: Genre) => (
               <Badge key={genre.name} colorScheme="purple" px={2} py={1}>
                 {genre.name}
               </Badge>
@@ -167,4 +167,8 @@ export default function DetailPage() {
       </Flex>
     </Box>
   )
+}
+
+export interface Genre {
+  name: string;
 }
